@@ -1,0 +1,9 @@
+stages:
+  - gitinit
+ 
+gitinit:
+    stage: gitinit
+    script:
+      - cd /home/su/su-backend
+      - git pull
+

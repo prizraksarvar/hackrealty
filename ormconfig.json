@@ -1,0 +1,24 @@
+{
+   "type": "postgres",
+   "host": "localhost",
+   "port": 5432,
+   "username": "postgres",
+   "password": "pgTestPass123",
+   "database": "hackrealty",
+   "synchronize": true,
+   "logging": true,
+   "entities": [
+      "lib/entities/**/*.js"
+   ],
+   "migrations": [
+      "lib/migration/**/*.js"
+   ],
+   "subscribers": [
+      "lib/subscriber/**/*.js"
+   ],
+   "cli": {
+      "entitiesDir": "lib/entities",
+      "migrationsDir": "lib/migration",
+      "subscribersDir": "lib/subscriber"
+   }
+}
